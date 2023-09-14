@@ -20,10 +20,22 @@
     }
 
     #aside-menu{
+        display: flex;
+        flex-direction: column;
         position: absolute;
         top: 4rem;
         width: inherit;
         padding-bottom: 1rem;
+        gap: 1rem;
+    }
+
+    #aside-menu.noMostrar{
+        display: none;
+    }
+
+    #aside-menu.mostrar{
+        display: flex;
+        flex-direction: column;
     }
 }
 
@@ -42,20 +54,6 @@
         flex-direction: column;
         justify-content: center;
         height: 100%;
-    }
-
-    #aside-menu.noMostrar{
-        display: none;
-    }
-
-    #aside-menu.mostrar{
-        display: flex;
-        flex-direction: column;
-    }
-
-    #aside-menu{
-        gap: 1rem;
-        margin-bottom: 1rem;
     }
 
     #menu-icon{
