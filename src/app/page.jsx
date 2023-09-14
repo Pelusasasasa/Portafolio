@@ -1,17 +1,20 @@
 
 import Image from "next/image";
 import  imgFondo from "../../public/fondo.jpg"
+import Link from "next/link";
 
 const HomePage = () => {
   return (
-    <section>
+    <section className="relative h-[calc(100vh-4rem)]">
       <Image
-        className="max-w-screen max-h-screen object-cover bg-transparent"
+        className="max-w-screen h-full object-cover bg-black opacity-95"
         src={imgFondo}
         alt="Fondo"
       />
-      <div>
-        <h1>Soy <span className="text-red-700">Agustin Lorenzatto</span>, Desarrolador Web</h1>
+      <div className="absolute top-0 h-full flex items-center justify-center w-full bg-black opacity-70 flex-col gap-5">
+        <h3 className="text-white text-2xl">Bienvenidos</h3>
+        <h1 className="text-4xl text-white">Soy <span className="text-red-700">Agustin Lorenzatto</span>, Desarrolador Web</h1>
+        <Link href='/portafolio'><button className="text-white rounded-2xl border border-white px-6 py-4 hover:bg-red-700 hover:text-black font-bold text-2xl">Mi Portafolio</button></Link>
       </div>
     </section>
   )

@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 const about = () => {
+
   return (
     <section className="grid grid-cols-2 container gap-4">
         <div id="img" className="mx-4 my-4">
