@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const HomePage = () => {
   return (
-    <section className="relative h-[calc(100vh-4rem)]">
+    <section className="relative h-screen">
       <Image
         className="max-w-screen h-full object-cover bg-black opacity-95"
         src={imgFondo}
