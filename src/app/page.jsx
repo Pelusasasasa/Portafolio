@@ -13,7 +13,7 @@ const HomePage = () => {
       />
       <div className="absolute top-0 h-full flex items-center justify-center w-full bg-black opacity-70 flex-col gap-5">
         <h3 className="text-white text-2xl">Bienvenidos</h3>
-        <h1 className="text-4xl text-white">Soy <span className="text-red-700">Agustin Lorenzatto</span>, Desarrolador Web</h1>
+        <h1 className="text-4xl text-center text-white">Soy <span className="text-red-700">Agustin Lorenzatto</span>, Desarrolador Web Junior</h1>
         <Link href='/portafolio'><button className="text-white rounded-2xl border border-white px-6 py-4 hover:bg-red-700 hover:text-black font-bold text-2xl">Mi Portafolio</button></Link>
       </div>
     </section>
