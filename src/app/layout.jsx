@@ -13,6 +13,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <title>Portafolio</title>
+      </head>
       <body>
         <NavBar/>
         {children}
