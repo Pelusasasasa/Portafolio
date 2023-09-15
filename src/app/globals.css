@@ -37,12 +37,41 @@
         display: flex;
         flex-direction: column;
     }
+
+    #services{
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
+    }
+
+    #services main{
+        width: 95%;
+    }
+}
+
+@media (width <= 740px){
+    #services{
+        grid-template-columns: 1fr;
+    }
+
+    #services main{
+        width: 90%;
+    }
+
 }
 
 @media ((width <= 640px)){
     #iconsRedes{
         display: none;
     }
+
+    #about{
+        grid-template-columns: 1fr;
+    }
+
+    #informacion{
+        margin-left: 2rem;
+    }
+
 }
 
 @media (width <= 500px){

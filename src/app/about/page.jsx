@@ -3,9 +3,9 @@ import Image from "next/image";
 const about = () => {
 
   return (
-    <section className="grid grid-cols-2 container gap-4 pt-20">
+    <section id="about" className="grid grid-cols-2 container gap-4 pt-20">
         <div id="img" className="mx-4 my-4">
-            <Image width={500} height={500} src="/perfil.jpg" alt="" />
+            <Image className="mx-auto" width={500} height={500} src="/perfil.jpg" alt="" />
         </div>
         <div id="informacion" className="my-4">
             <h1 className="text-5xl font-bold">Sobre Mi</h1>

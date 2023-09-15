@@ -37,11 +37,11 @@ const services = [
 
 const Servicios = () => {
   return (
-    <section className='h-screen bg-slate-600 top-16 relative'>
+    <section className='h-full bg-slate-600 top-16 relative'>
         <div className="atencion py-5">
             <h1 className='text-4xl text-white text-center'>Los servicios que ofrezco estan en procesos de aprendizaje</h1>
         </div>
-        <div className="services container mx-auto grid grid-cols-3 gap-5 w-full">
+        <div id='services' className="services container mx-auto items-center grid grid-cols-3 gap-5 w-full">
             {services.map((service, index) => (
                 <Service key={index} title={service.title} description={service.description} image={service.image} />
               ))}
