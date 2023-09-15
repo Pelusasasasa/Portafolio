@@ -4,6 +4,7 @@ import  imgFondo from "../../public/fondo.jpg"
 import Link from "next/link";
 
 const HomePage = () => {
+  console.log("a")
   return (
     <section className="relative h-screen">
       <Image
