@@ -2,8 +2,8 @@ import React from 'react';
 import ProyectCard from '@/components/ProyectCard';
 
 import electroAvenidaImg from '../../../public/proyectos/electroAvenida/principal.png';
-import portafolioImg from '../../../public/proyectos/portafolio/principal.png';
-import getionStockImg from '../../../public/proyectos/gestionStock/Principal.png';
+import portafolioImg from '../../../public/proyectos/portafolio/Principal.png';
+import getionStockImg from '../../../public/proyectos/gestionStock/principal.png';
 
 const proyectos = [
   {
