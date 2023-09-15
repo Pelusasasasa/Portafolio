@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
       <head>
         <title>Portafolio</title>
       </head>
-      <body>
+      <body className='bg-slate-600'>
         <NavBar/>
         {children}
         {/* <Footer/> */}

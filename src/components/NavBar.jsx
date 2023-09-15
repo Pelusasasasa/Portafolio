@@ -26,7 +26,7 @@ const NavBar = () => {
                 <Link href='/about'><li className="hover:text-red-700 hover:cursor-pointer text-2xl">Sobre Mi</li></Link>
                 <Link href='/services'><li className="hover:text-red-700 hover:cursor-pointer text-2xl">Servicios</li></Link>
                 <Link href='portafolio'><li className="hover:text-red-700 hover:cursor-pointer text-2xl">Portafolio</li></Link>
-                <Link href='contact'><li className="hover:text-red-700 hover:cursor-pointer text-2xl">Contacto</li></Link>
+                <Link href='contact'><li className="hover:text-red-700 hover:cursor-pointer text-2xl">Practicas</li></Link>
             </ul>
             <ul id="iconsRedes" className="flex gap-4 text-white">
                 <li>

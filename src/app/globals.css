@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @media ((width <= 1030px)){
     #menu{
         display: none;
@@ -38,7 +37,7 @@
         flex-direction: column;
     }
 
-    #services{
+    #services,#proyect{
         grid-template-columns: 1fr 1fr;
         place-items: center;
     }
@@ -46,14 +45,15 @@
     #services main{
         width: 95%;
     }
+
 }
 
 @media (width <= 740px){
-    #services{
+    #services,#proyect{
         grid-template-columns: 1fr;
     }
 
-    #services main{
+    #services main,#proyect > div{
         width: 90%;
     }
 
