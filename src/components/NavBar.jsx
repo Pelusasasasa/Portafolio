@@ -2,16 +2,24 @@
 
 import Link from "next/link";
 import Image from "next/image";
+import {usePathname,useSearchParams} from 'next/navigation';
 
 import githubIcon from "../../public/github.png";
 import facebookIcon from "../../public/facebook.png";
 import whatsappIcon from "../../public/whatsapp.png";
 import asideMenuIcon from "../../public/asideMenu.png";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 
 const NavBar = () => {
     const [menu,setMenu] = useState(false);
+
+    let path = usePathname();
+
+    useEffect(() => {
+      setMenu(false);
+    }, [path]);
+    
 
     const handleMenu = () => {
       setMenu(!menu)
