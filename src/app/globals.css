@@ -37,7 +37,7 @@
         flex-direction: column;
     }
 
-    #services,#proyect{
+    #services,#proyect,#practicas{
         grid-template-columns: 1fr 1fr;
         place-items: center;
     }
@@ -48,8 +48,8 @@
 
 }
 
-@media (width <= 740px){
-    #services,#proyect{
+@media (width <= 768px){
+    #services,#proyect,#practicas{
         grid-template-columns: 1fr;
     }
 

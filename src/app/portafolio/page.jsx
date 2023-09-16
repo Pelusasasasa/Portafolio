@@ -28,7 +28,7 @@ const proyectos = [
 
 const page = () => {
   return (
-    <div id='proyect' className='bg-slate-600 top-16 relative grid grid-cols-3 pb-5 gap-3 pt-5'>
+    <div id='proyect' className='bg-slate-600 px-5 top-16 relative grid grid-cols-3 pb-5 gap-3 pt-5'>
        {proyectos.map((services, index) => (
         <ProyectCard title={services.title} key={index} image={services.image} tecnologia={services.tecnologia} description={services.description} />
       ))}

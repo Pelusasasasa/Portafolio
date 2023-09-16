@@ -33,18 +33,18 @@ const NavBar = () => {
                 <Link href='/'><li className="hover:text-red-700 hover:cursor-pointer text-2xl">Inicio</li></Link>
                 <Link href='/about'><li className="hover:text-red-700 hover:cursor-pointer text-2xl">Sobre Mi</li></Link>
                 <Link href='/services'><li className="hover:text-red-700 hover:cursor-pointer text-2xl">Servicios</li></Link>
-                <Link href='portafolio'><li className="hover:text-red-700 hover:cursor-pointer text-2xl">Portafolio</li></Link>
-                <Link href='contact'><li className="hover:text-red-700 hover:cursor-pointer text-2xl">Practicas</li></Link>
+                <Link href='/portafolio'><li className="hover:text-red-700 hover:cursor-pointer text-2xl">Portafolio</li></Link>
+                <Link href='/practica'><li className="hover:text-red-700 hover:cursor-pointer text-2xl">Practicas</li></Link>
             </ul>
             <ul id="iconsRedes" className="flex gap-4 text-white">
                 <li>
-                  <Image className="hover:cursor-pointer text-white" src={githubIcon} />
+                  <Image className="hover:cursor-pointer text-white" src={githubIcon} alt="GitHub" />
                 </li>
                 <li>
-                  <Image className="hover:cursor-pointer text-white" src={facebookIcon} />
+                  <Image className="hover:cursor-pointer text-white" src={facebookIcon} alt="Facebook"/>
                 </li>
                 <li>
-                  <Image className="hover:cursor-pointer text-white" src={whatsappIcon} />
+                  <Image className="hover:cursor-pointer text-white" src={whatsappIcon} alt="WhatsApp"/>
                 </li>
             </ul>
 
@@ -59,8 +59,8 @@ const NavBar = () => {
                 <Link href='/'><li className="hover:text-red-700 hover:cursor-pointer text-2xl text-center mx-5">Inicio</li></Link>
                 <Link href='/about'><li className="hover:text-red-700 hover:cursor-pointer text-2xl text-center mx-5">Sobre Mi</li></Link>
                 <Link href='/services'><li className="hover:text-red-700 hover:cursor-pointer text-2xl text-center mx-5">Servicios</li></Link>
-                <Link href='portafolio'><li className="hover:text-red-700 hover:cursor-pointer text-2xl text-center mx-5">Portafolio</li></Link>
-                <Link href='contact'><li className="hover:text-red-700 hover:cursor-pointer text-2xl text-center mx-5">Contacto</li></Link>
+                <Link href='/portafolio'><li className="hover:text-red-700 hover:cursor-pointer text-2xl text-center mx-5">Portafolio</li></Link>
+                <Link href='/practica'><li className="hover:text-red-700 hover:cursor-pointer text-2xl text-center mx-5">Practicas</li></Link>
               </ul>
             </div>
 
