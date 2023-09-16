@@ -9,8 +9,8 @@ const PracticaCard = ({practica}) => {
             <h1 className="text-white text-3xl  text-center">{practica.title}</h1>
             <p className="text-white text-center text-xl">{practica.description}</p>
             <p className="flex gap-2  mt-auto items-center text-white">Tecnlogias: 
-                {practica.tecnologias.map((tecnologia) => (
-                    <span className="bg-slate-700 rounded-xl hover:cursor-pointer hover:bg-slate-800 px-2 py-2">{tecnologia}</span>
+                {practica.tecnologias.map((tecnologia,index) => (
+                    <span key={index} className="bg-slate-700 rounded-xl hover:cursor-pointer hover:bg-slate-800 px-2 py-2">{tecnologia}</span>
                 ))}
             </p>
         </div>
