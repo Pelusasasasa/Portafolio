@@ -1,7 +1,14 @@
 import PracticaCard from '@/components/PracticaCard';
 import taskIMG from '../../../public/practicas/crudTask.png';
+import firstProjectIMG from '../../../public/practicas/firstProject.png';
 
 const practicas = [
+    {
+        title:'Primer Poyecto en NextJS',
+        description: 'Mi primera apliacon en next Js que usamos una api para traer usuarios',
+        tecnologias: ['NextJS', 'Taiwind CSS'],
+        img: firstProjectIMG
+    },
     {
         title: 'Crud de Tareas',
         description: 'Aplicacion para crear, eliminar,modificar y ver tareas pendientes a cumplor',

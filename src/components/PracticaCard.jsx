@@ -4,7 +4,7 @@ const PracticaCard = ({practica}) => {
   return (
     <article>
         <div className="flex h-full flex-col justify-center items-center">
-            <Image src={practica.img} alt={practica.title}/>
+            <Image className="h-44 object-contain" src={practica.img} alt={practica.title}/>
             <h1 className="text-white text-3xl  text-center">{practica.title}</h1>
             <p className="text-white text-center text-xl">{practica.description}</p>
             <p className="flex gap-2  mt-auto items-center text-white">Tecnlogias: 
