@@ -18,6 +18,10 @@
         width: 300px;
     }
 
+    #menu .active{
+        color: blue;
+    }
+
     #aside-menu{
         display: flex;
         flex-direction: column;
@@ -26,6 +30,7 @@
         width: inherit;
         padding-bottom: 1rem;
         gap: 1rem;
+        padding-top: 1rem;
     }
 
     #aside-menu.noMostrar{

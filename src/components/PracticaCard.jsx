@@ -1,7 +1,6 @@
 import Image from "next/image"
 
 const PracticaCard = ({practica}) => {
-    console.log(practica)
   return (
     <article>
         <div className="flex h-full flex-col justify-center items-center">
