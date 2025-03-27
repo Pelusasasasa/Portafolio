@@ -1,6 +1,6 @@
 import { Schema, model } from 'mongoose';
 
-const Project = new Schema({
+export const Project = new Schema({
     name: {
         type: String,
         required: [true, 'El nombre del proyecto es obligatorio'],
@@ -22,9 +22,13 @@ const Project = new Schema({
         type: String,
         default: ''
     },
+    isFeatured: {
+        type: Boolean,
+        default: false
+    }
 }, {
     timestamps: true
 });
 
 
-module.exports = model('Project', Project);
+export default model('Project', Project);

@@ -28,4 +28,14 @@ const Blog = new Schema({
     }
 }, {
     timestamps: true
+});
+
+Blog.pre('save', function (next) {
+    if (!this.slug) {
+        this.slug = this.title
+            .toLowerCase()
+            .replace(/ /g, '-')
+            .replace(/[^\w-]+/g, '');
+    }
+    next();
 })
