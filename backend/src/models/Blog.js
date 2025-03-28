@@ -1,4 +1,4 @@
-import { Schema } from "mongoose";
+import { model, Schema } from "mongoose";
 
 const Blog = new Schema({
     title: {
@@ -39,3 +39,5 @@ Blog.pre('save', function (next) {
     }
     next();
 })
+
+export default model('Blog', Blog);

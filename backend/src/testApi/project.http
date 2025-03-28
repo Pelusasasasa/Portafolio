@@ -1,10 +1,13 @@
-#Post para cargar un portfolio
+###Post para cargar un portfolio
 POST http://localhost:3001/portfolio/project
 content-type: application/json
 
 {
-  
+  "name": "Portafolio MERN",
   "description": "Mi portafolio personal",
   "technologies": ["React", "Node.js"],
   "githubURL": "https://github.com/tu-usuario/portafolio"
 }
+
+###Get de todos los projectos
+GET http://localhost:3001/portfolio/project

@@ -11,12 +11,22 @@ const projectSchema = z.object({
         required_error: 'La descripcion es requerida'
     }),
 
-    technologies: z.array(z.string())
+    technologies: z.array(z.string()),
+
+    imageURL: z.string({
+        invalid_type_error: 'La Url de la imagen debe ser un string'
+    }),
+
+    githubURL: z.string({
+        invalid_type_error: 'La Url de la imagen debe ser un string'
+    }),
+
+    isFeatured: z.boolean({
+        invalid_type_error: 'El featured debe ser booleano'
+    })
 });
 
 async function validateProject(input) {
-    console.log(input);
-    console.log(projectSchema.safeParseAsync);
     return await projectSchema.safeParseAsync(input)
 };
 
