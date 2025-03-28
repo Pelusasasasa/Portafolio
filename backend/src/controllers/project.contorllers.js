@@ -1,5 +1,6 @@
 const projectCTRL = {};
 
+import { validateProject } from '../schemas/project.schema.js';
 import Project from '../models/Project.js';
 
 projectCTRL.getAll = async (req, res) => {
@@ -22,16 +23,17 @@ projectCTRL.getAll = async (req, res) => {
 
 projectCTRL.postOne = async (req, res) => {
     try {
-        const { name, description, technologies, imageURL, githubURL, isFeatured } = req.body;
 
-        const project = new Project({
-            name,
-            description,
-            technologies,
-            imageURL,
-            githubURL,
-            isFeatured
-        });
+        const result = await validateProject(req.body);
+
+        console.log(result);
+
+        if (!result.succes) return res.status(500).json({
+            ok: false,
+            msg: JSON.parse(result.error)
+        })
+
+        const project = new Project(result.data);
 
         await project.save();
 
