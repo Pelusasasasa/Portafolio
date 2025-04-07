@@ -2,6 +2,7 @@ import React from 'react'
 import { AboutMe } from '../Components/AboutMe'
 import { Skills } from '../Components/Skills'
 import { Projects } from '../Components/Projects'
+import { Contact } from '../Components/Contact'
 
 export const Home = () => {
     return (
@@ -35,6 +36,15 @@ export const Home = () => {
             <section>
                 <Projects />
             </section>
+
+            <section className='py-16 md:py-24'>
+                <Contact />
+            </section>
+
+            <hr  className='text-gray-400 mb-2'/>
+            <footer>
+                <p className='text-xl px-5 mb-2'>2025 Lorenzatto Agustin. Todos los derechos resevados</p>
+            </footer>
         </div>
 
 
